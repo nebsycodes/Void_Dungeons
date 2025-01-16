@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#battlefield {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#player, #enemy {
+    width: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#player {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#enemy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.7);
+}
+
+.card {
+    display: inline-block; 
+    background-color: #c0c0c0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #b0b0b0;
+}
+
+#inventory-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#inventory-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#inventory-button:hover {
+    background-color: #0056b3;
+}
+
+#inventory {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.inventory-item {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.inventory-item:hover {
+    background-color: #ddd;
+}
+
+.slot {
+    margin: 10px 0;
+}
+
+.item {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #0056b3;
+}

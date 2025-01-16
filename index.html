@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>void_dungeons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>void dungeons</h1>
+        
+        <div id="inventory-container">
+            <button id="inventory-button">Inventory</button>
+            <div id="inventory" class="dropdown-content">
+                <!-- Inventory items will be dynamically added here -->
+            </div>
+        </div>
+        
+        <div id="battlefield" class="scene">
+            <div id="player">
+                <h2>Player</h2>
+                <p>Health: <span id="player-health">10</span></p>
+            </div>
+            <div id="enemy">
+                <h2>Enemy</h2>
+                <p>Health: <span id="enemy-health">10</span></p>
+            </div>
+        </div>
+        <div id="player-cards-container">
+            <div id="player-cards"></div>
+        </div>
+        <div id="game-over" class="scene">
+            <h1>YOU DIED</h1>
+            <button id="restart-game">Restart Game</button>
+        </div>
+        <div id="shop" class="scene">
+            <h2>Shop</h2>
+            <p>Currency: <span id="currency">0</span></p>
+            <div id="shop-items">
+                <!-- Shop items will be dynamically added here -->
+            </div>
+            <button id="exit-shop">Exit Shop</button>
+        </div>
+        <div id="equipment" class="scene">
+            <h2>Equipment</h2>
+            <div id="head-slot" class="slot">Head: None</div>
+            <div id="chest-slot" class="slot">Chest: None</div>
+            <div id="legs-slot" class="slot">Legs: None</div>
+            <div id="left-hand-slot" class="slot">Left Hand: None</div>
+            <div id="right-hand-slot" class="slot">Right Hand: None</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
