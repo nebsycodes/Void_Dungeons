@@ -158,7 +158,7 @@ class Character {
         this.xpToNextLevel = Math.floor(this.xpToNextLevel * 1.5); // Increase next level XP requirement
         this.maxHealth = Math.floor(this.maxHealth * 1.1); // Increase max health by 10%
         this.health = this.maxHealth; // Restore health to max
-        alert(`Level up! You are now level ${this.level}. Max health increased to ${this.maxHealth}.`);
+        //alert(`Level up! You are now level ${this.level}. Max health increased to ${this.maxHealth}.`);
     }
 }
 
@@ -281,7 +281,7 @@ function enemyTurn() {
 function gainReward() {
     const reward = Math.floor(20 * Math.pow(1.1, round - 1));
     currency += reward;
-    alert(`You gained ${reward} currency!`);
+    //alert(`You gained ${reward} currency!`);
     round++;
     updateUI();
 }
@@ -356,10 +356,10 @@ function populateShop() {
                     }
                 }
                 updateUI();
-                alert(`${item.name} purchased!`);
+                //alert(`${item.name} purchased!`);
                 populateShop(); // Repopulate shop to reflect available items
             } else {
-                alert('Not enough currency!');
+                //alert('Not enough currency!');
             }
         });
 
@@ -379,9 +379,9 @@ function populateShop() {
             currency -= 20;
             inventory.push(healthPotion);
             updateUI();
-            alert(`${healthPotion.name} purchased!`);
+            //alert(`${healthPotion.name} purchased!`);
         } else {
-            alert('Not enough currency!');
+            //alert('Not enough currency!');
         }
     });
     healthPotionDiv.appendChild(healthPotionButton);
@@ -413,7 +413,7 @@ function equipItem(item) {
         item.applyEffect(player);
         inventory = inventory.filter(i => i !== item);
         updateUI();
-        alert(`${item.name} used!`);
+        //alert(`${item.name} used!`);
     }
 }
 
