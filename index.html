@@ -19,8 +19,12 @@
         
         <div id="battlefield" class="scene">
             <div id="player">
+                <h2 id="player-level">LVL 1</h2>
                 <h2>Player</h2>
                 <p>Health: <span id="player-health">10</span></p>
+                <div id="xp-bar-container">
+                    <div id="xp-bar"></div>
+                </div>
             </div>
             <div id="enemy">
                 <h2>Enemy</h2>
@@ -37,8 +41,13 @@
         <div id="shop" class="scene">
             <h2>Shop</h2>
             <p>Currency: <span id="currency">0</span></p>
-            <div id="shop-items">
-                <!-- Shop items will be dynamically added here -->
+            <div id="shop-container">
+                <div id="shop-items" class="shop-column">
+                    <!-- Rare items will be dynamically added here -->
+                </div>
+                <div id="shop-constants" class="shop-column">
+                    <!-- Constant items will be dynamically added here -->
+                </div>
             </div>
             <button id="exit-shop">Exit Shop</button>
         </div>
